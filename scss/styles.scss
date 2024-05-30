@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url('ProximaNova-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('../fonts/ProximaNova-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url('ProximaNova-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url('ProximaNova-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --index: calc(1vw + 1vh);
+  --text: #fff;
+  --brand-gradient: linear-gradient(216deg, #4870ff 0%, #fa00ff 100%);
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background-color: #01011F;
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+  padding: 14px 200px;
+}
+
+.header__info {
+  display: flex;
+  gap: 64px;
+}
+
+.header__logo {
+  width: 48px;
+  height: 48px;
+}
+
+.header__nav {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+
+.header__items {
+  text-decoration: none;
+  color: var(--text);
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-size: 16px;
+}
+
+
+.header__signup {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.header__text {
+  text-decoration: none;
+  color: var(--text);
+  font-family: 'Proxima Nova Bold', sans-serif;
+}
+
+.header__button {
+  border-radius: 8px;
+  border: none;
+  width: 114px;
+  height: 40px;
+  box-shadow: 0 4px 16px 0 rgba(138, 97, 255, 0.6);
+  background: var(--brand-gradient);
+  color: var(--text);
+  font-family: 'Proxima Nova Bold', sans-serif;
+}
+
+/* 
+.main {
+  flex-grow: 1;
+
+ 
+} */
+
+.footer {
+  height: 207px;
+  background-color: #01011F;
+}
+
+.main__hero {
+  height: 746px;
+  background-image: url(../img/bg_hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main__contact {
+  height: 870px;
+  background-image: url(../img/bg_contact.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
