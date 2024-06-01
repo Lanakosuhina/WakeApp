@@ -4,12 +4,16 @@
   --black: #01011F;
   --brand-blue: #4870ff;
   --brand-pink: #fa00ff;
-  --brand-gradient: linear-gradient(216deg, var(--brand-blue) 0%,var(--brand-pink) 100%);
+  --brand-gradient: linear-gradient(216deg, var(--brand-blue) 0%, var(--brand-pink) 100%);
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -42,12 +46,19 @@
   height: 100vh;
 }
 
+.burger {
+  display: none;
+}
+
 .header {
   background-color: var(--black);
   display: flex;
   justify-content: space-between;
   gap: 36px;
   padding: 14px calc(50% - 520px);
+}
+.header__container {
+  display: flex;
 }
 .header__info {
   display: flex;
@@ -59,8 +70,8 @@
 }
 .header__nav {
   display: flex;
-  gap: 36px;
   align-items: center;
+  gap: 36px;
 }
 .header__items {
   text-decoration: none;
@@ -536,4 +547,639 @@
 .footer__medias {
   display: flex;
   gap: 13px;
+}
+
+@media screen and (max-width: 1280px) {
+  .header {
+    padding: 14px calc(50% - 450px);
+  }
+  .header__info {
+    gap: 44px;
+  }
+  .header__nav {
+    gap: 26px;
+  }
+  .main__heading {
+    padding-top: 44px;
+  }
+  .main__slogan {
+    padding-bottom: 20px;
+  }
+  .main__buttons {
+    padding-bottom: 50px;
+  }
+  .main__form {
+    width: 800px;
+  }
+  .form__desc {
+    gap: 14px;
+  }
+  .form__middle {
+    gap: 16px;
+  }
+  .form__input {
+    width: 200px;
+  }
+  .email {
+    width: 220px;
+  }
+  .center__wrapper {
+    padding: 0 calc(50% - 450px);
+  }
+  .center__block {
+    padding: 54px calc(50% - 450px) 24px calc(50% - 450px);
+  }
+  .center__space {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .center__attention {
+    font-size: 12px;
+    padding-top: 20px;
+  }
+  .div1,
+  .div2,
+  .div3 {
+    gap: 10px;
+  }
+  .div4,
+  .div5 {
+    gap: 10px;
+  }
+  .game__img {
+    width: 140px;
+    height: 100px;
+    padding-bottom: 3px;
+  }
+  .game__big-1 {
+    width: 220px;
+    height: 135px;
+    padding: 10px 12px;
+  }
+  .game__big-2 {
+    width: 220px;
+    height: 135px;
+    padding: 10px 12px;
+  }
+  .game__big-button {
+    font-size: 8px;
+    padding: 5px 10px;
+  }
+  .game__title {
+    font-size: 14px;
+  }
+  .game__dev {
+    font-size: 10px;
+  }
+  .game__promo-img {
+    padding-bottom: 3px;
+    width: 450px;
+    height: 100px;
+  }
+  .bottom {
+    padding-top: 55px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer {
+    padding: 14px calc(50% - 450px);
+  }
+  .footer__links {
+    font-size: 16px;
+  }
+  .footer__attention {
+    font-size: 12px;
+  }
+  .footer__text {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .header {
+    padding: 14px 15px;
+  }
+  .header__info {
+    gap: 32px;
+  }
+  .header__nav {
+    gap: 18px;
+  }
+  .header__items, .header__text {
+    font-size: 14px;
+  }
+  .header__signup {
+    gap: 14px;
+  }
+  .header__button {
+    width: 100px;
+    height: 35px;
+  }
+  .main__top {
+    padding: 0 15px;
+  }
+  .main__heading {
+    padding-top: 40px;
+    font-size: 36px;
+    padding-bottom: 6px;
+  }
+  .main__slogan {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+  .main__buttons {
+    gap: 14px;
+    padding-bottom: 39px;
+  }
+  .main__form {
+    gap: 10px;
+    width: 738px;
+    height: 140px;
+    padding: 16px;
+  }
+  .main__account {
+    font-size: 18px;
+  }
+  .button__login, .button__play {
+    width: 140px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .button__join {
+    height: 35px;
+    font-size: 14px;
+  }
+  .form__desc {
+    gap: 16px;
+  }
+  .form__input {
+    height: 35px;
+  }
+  .form__input::-moz-placeholder {
+    font-size: 12px;
+    padding: 13px;
+  }
+  .form__input::placeholder {
+    font-size: 12px;
+    padding: 13px;
+  }
+  .form__privacy {
+    display: flex;
+    gap: 8px;
+  }
+  .form__acception {
+    font-size: 12px;
+  }
+  .form__checkbox + label::before {
+    width: 12px;
+    height: 12px;
+  }
+  .center__wrapper {
+    padding: 0 15px;
+    height: 1200px;
+  }
+  .center__block {
+    padding: 35px calc(50% - 256px) 20px calc(50% - 256px);
+  }
+  .center__heading {
+    font-size: 28px;
+  }
+  .center__title {
+    gap: 3px;
+  }
+  .center__welcome, .center__link {
+    font-size: 14px;
+  }
+  .center__space {
+    justify-content: center;
+    row-gap: 16px;
+  }
+  .center__attention {
+    font-size: 12px;
+    padding-top: 0px;
+    max-width: 512px;
+  }
+  .game__img {
+    width: 160px;
+    height: 120px;
+    padding-bottom: 6px;
+  }
+  .game__title {
+    font-size: 16px;
+  }
+  .game__dev {
+    font-size: 12px;
+  }
+  .game__desc {
+    font-size: 10px;
+    width: 162px;
+    padding-bottom: 16px;
+  }
+  .game__big-1, .game__big-2 {
+    width: 248px;
+    height: 160px;
+    padding: 16px 12px;
+  }
+  .game__big-button {
+    font-size: 10px;
+    padding: 5px 13px;
+  }
+  .game__promo-img {
+    width: 512px;
+    height: 120px;
+  }
+  .bottom {
+    justify-content: center;
+  }
+  .bottom__block {
+    padding-top: 0px;
+  }
+  .bottom__title {
+    font-size: 28px;
+  }
+  .bottom__info {
+    font-size: 14px;
+  }
+  .bottom__inputs {
+    gap: 14px;
+    padding-top: 20px;
+  }
+  .bottom__button {
+    font-size: 14px;
+    width: 124px;
+    height: 30px;
+  }
+  .bottom__image {
+    display: none;
+  }
+  .footer {
+    padding: 14px 15px;
+  }
+  .footer__links {
+    font-size: 14px;
+  }
+  .footer__attention, .footer__text {
+    font-size: 12px;
+  }
+  .footer__line {
+    margin: 20px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__burger {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+  }
+  .header__container {
+    display: flex;
+    gap: 36px;
+  }
+  .header__text {
+    display: none;
+  }
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 1em;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle {
+    display: none;
+  }
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  .menu-button::before {
+    content: "";
+    margin-top: -8px;
+  }
+  .menu-button::after {
+    content: "";
+    margin-top: 8px;
+  }
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 76px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 10;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    display: flex;
+    align-items: center;
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: var(--black);
+    text-decoration: none;
+    color: var(--white);
+    font-family: "Proxima Nova Bold", sans-serif;
+    font-size: 16px;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+  .main__form {
+    gap: 12px;
+    width: 500px;
+    height: 236px;
+    padding: 16px;
+  }
+  .form__top {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .form__desc {
+    display: flex;
+    gap: 24px;
+  }
+  .form__about {
+    gap: 6px;
+    font-size: 12px;
+  }
+  .form__middle {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  .form__input {
+    width: 200px;
+    height: 40px;
+  }
+  .form__input::-moz-placeholder {
+    font-size: 14px;
+  }
+  .form__input::placeholder {
+    font-size: 14px;
+  }
+  .form__privacy {
+    justify-content: center;
+  }
+  .form__acception {
+    font-size: 12px;
+  }
+  .email {
+    width: 200px;
+  }
+  .button__join {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 534px) {
+  .header__container {
+    gap: 18px;
+  }
+  .main__heading {
+    padding-top: 30px;
+    font-size: 24px;
+    padding-bottom: 6px;
+  }
+  .main__slogan {
+    font-size: 14px;
+    padding-bottom: 16px;
+  }
+  .main__buttons {
+    gap: 12px;
+    padding-bottom: 30px;
+  }
+  .main__form {
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    padding: 12px;
+  }
+  .main__account {
+    font-size: 16px;
+  }
+  .button__login, .button__play {
+    width: 140px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .button__join {
+    height: 35px;
+    font-size: 14px;
+  }
+  .form__top {
+    row-gap: 6px;
+  }
+  .form__desc, .form__middle {
+    gap: 10px;
+  }
+  .form__about {
+    font-size: 8px;
+  }
+  .form__img {
+    width: 30px;
+    height: 30px;
+  }
+  .form__input {
+    width: 200px;
+    height: 35px;
+  }
+  .form__input::-moz-placeholder {
+    font-size: 12px;
+  }
+  .form__input::placeholder {
+    font-size: 12px;
+  }
+  .form__acception {
+    font-size: 10px;
+  }
+  .email {
+    width: 200px;
+  }
+  .center__wrapper {
+    padding: 0 15px;
+    height: 1400px;
+  }
+  .center__block {
+    padding: 35px 15px 20px 15px;
+  }
+  .center__heading {
+    font-size: 24px;
+  }
+  .center__title {
+    gap: 3px;
+  }
+  .center__welcome, .center__link {
+    font-size: 12px;
+  }
+  .center__space {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .center__attention {
+    font-size: 10px;
+    max-width: 290px;
+  }
+  .div1,
+  .div2,
+  .div3,
+  .div5 {
+    flex-direction: column;
+  }
+  .div4 {
+    flex-direction: row;
+  }
+  .game__img {
+    width: 140px;
+    height: 100px;
+    padding-bottom: 3px;
+  }
+  .game__title {
+    font-size: 14px;
+  }
+  .game__dev {
+    font-size: 10px;
+  }
+  .game__desc {
+    font-size: 12px;
+    width: 170px;
+    padding-top: 8px;
+    padding-bottom: 16px;
+  }
+  .game__big-1, .game__big-2 {
+    width: 290px;
+    height: 183px;
+    padding: 18px 14px;
+  }
+  .game__big-button {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+  .game__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .game__slogans {
+    display: flex;
+    flex-direction: column;
+  }
+  .game__promo-img {
+    border-radius: 16px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 290px;
+    height: 100px;
+    -o-object-position: left center;
+       object-position: left center;
+  }
+  .bottom__title {
+    font-size: 28px;
+  }
+  .bottom__info {
+    font-size: 12px;
+  }
+  .bottom__button {
+    font-size: 14px;
+  }
+  .input__name, .input__email {
+    width: 290px;
+    height: 35px;
+  }
+  .input__name::-moz-placeholder, .input__email::-moz-placeholder {
+    font-size: 12px;
+  }
+  .input__name::placeholder, .input__email::placeholder {
+    font-size: 12px;
+  }
+  .input__textarea {
+    width: 290px;
+    height: 90px;
+  }
+  .input__textarea::-moz-placeholder {
+    font-size: 12px;
+  }
+  .input__textarea::placeholder {
+    font-size: 12px;
+  }
+  .footer {
+    padding: 14px 15px;
+  }
+  .footer__links {
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+  .footer__attention {
+    font-size: 10px;
+  }
+  .footer__text {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,469 @@
+// для бургер-меню и формы регистрации
+@media screen and (max-width: 768px) {
+
+  .header {
+    &__nav {
+      display: none;
+    }
+
+    &__burger {
+      display: block;
+    }
+
+    &__container {
+      display: flex;
+      gap: 36px;
+    }
+
+    &__text {
+      display: none;
+    }
+
+  }
+
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 1em;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu>li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+
+  #menu-toggle:checked+.menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+
+  #menu-toggle:checked+.menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  #menu-toggle:checked+.menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+
+  .menu-button-container {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 76px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 10;
+  }
+
+  #menu-toggle~.menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  #menu-toggle:checked~.menu li {
+    display: flex;
+    align-items: center;
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .menu>li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: var(--black);
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-size: 16px;
+  }
+
+  .menu>li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+
+  .main {
+    &__form {
+      gap: 12px;
+      width: 500px;
+      height: 236px;
+      padding: 16px;
+    }
+
+  }
+
+  .form {
+
+    &__top {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+
+
+    &__desc {
+      display: flex;
+      gap: 24px;
+    }
+
+    &__about {
+      gap: 6px;
+      font-size: 12px;
+    }
+
+    &__middle {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    &__input {
+      width: 200px;
+      height: 40px;
+
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+
+    &__privacy {
+      justify-content: center;
+    }
+
+    &__acception {
+      font-size: 12px;
+    }
+
+  }
+
+  .email {
+    width: 200px;
+  }
+
+  .button__join {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+}
+
+
+@media screen and (max-width: 534px) {
+  .header__container {
+    gap: 18px;
+  }
+
+  .main {
+
+    &__heading {
+      padding-top: 30px;
+      font-size: 24px;
+      padding-bottom: 6px;
+    }
+
+    &__slogan {
+      font-size: 14px;
+      padding-bottom: 16px;
+    }
+
+    &__buttons {
+      gap: 12px;
+      padding-bottom: 30px;
+    }
+
+    &__form {
+      gap: 10px;
+      width: 300px;
+      height: 300px;
+      padding: 12px;
+    }
+
+    &__account {
+      font-size: 16px;
+    }
+
+  }
+
+  .button {
+
+    &__login,
+    &__play {
+      width: 140px;
+      height: 40px;
+      font-size: 14px;
+    }
+
+    &__join {
+      height: 35px;
+      font-size: 14px;
+    }
+
+  }
+
+  .form {
+
+    &__top {
+      row-gap: 6px;
+    }
+
+    &__desc,
+    &__middle {
+      gap: 10px;
+    }
+
+    &__about {
+      font-size: 8px;
+    }
+
+    &__img {
+      width: 30px;
+      height: 30px;
+    }
+
+    &__input {
+      width: 200px;
+      height: 35px;
+
+      &::placeholder {
+        font-size: 12px;
+      }
+    }
+
+    &__acception {
+      font-size: 10px;
+    }
+
+  }
+
+  .email {
+    width: 200px;
+  }
+
+  .center {
+    &__wrapper {
+      padding: 0 15px;
+      height: 1400px;
+    }
+
+    &__block {
+      padding: 35px 15px 20px 15px;
+    }
+
+    &__heading {
+      font-size: 24px;
+    }
+
+    &__title {
+      gap: 3px;
+    }
+
+    &__welcome,
+    &__link {
+      font-size: 12px;
+    }
+
+
+    &__space {
+      column-gap: 10px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    &__attention {
+      font-size: 10px;
+      max-width: 290px;
+    }
+
+  }
+
+  .div1,
+  .div2,
+  .div3,
+  .div5 {
+    flex-direction: column;
+  }
+
+  .div4 {
+    flex-direction: row;
+
+  }
+
+  .game {
+    &__img {
+      width: 140px;
+      height: 100px;
+      padding-bottom: 3px;
+    }
+
+    &__title {
+      font-size: 14px;
+    }
+
+    &__dev {
+      font-size: 10px;
+    }
+
+    &__desc {
+      font-size: 12px;
+      width: 170px;
+      padding-top: 8px;
+      padding-bottom: 16px;
+    }
+
+    &__big {
+
+      &-1,
+      &-2 {
+        width: 290px;
+        height: 183px;
+        padding: 18px 14px;
+      }
+
+      &-button {
+        font-size: 12px;
+        padding: 6px 14px;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__slogans {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    &__promo-img {
+      border-radius: 16px;
+      object-fit: cover;
+      width: 290px;
+      height: 100px;
+      object-position: left center;
+    }
+  }
+
+  .bottom {
+    &__title {
+      font-size: 28px;
+    }
+
+    &__info {
+      font-size: 12px;
+    }
+
+    &__button {
+      font-size: 14px;
+    }
+
+  }
+
+  .input {
+
+    &__name,
+    &__email {
+      width: 290px;
+      height: 35px;
+
+      &::placeholder {
+        font-size: 12px;
+      }
+    }
+
+    &__textarea {
+      width: 290px;
+      height: 90px;
+
+      &::placeholder {
+        font-size: 12px;
+      }
+    }
+
+
+  }
+
+
+  .footer {
+    padding: 14px 15px;
+
+    &__links {
+      font-size: 14px;
+      padding-bottom: 15px;
+    }
+
+    &__attention {
+      font-size: 10px;
+    }
+
+    &__text {
+      font-size: 12px;
+    }
+
+  }
+}

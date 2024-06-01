@@ -50,12 +50,20 @@ html {
   height: 100vh;
 }
 
+.burger {
+  display: none;
+}
+
 .header {
   background-color: var(--black);
   display: flex;
   justify-content: space-between;
   gap: 36px;
   padding: 14px calc(50% - 520px);
+
+  &__container {
+    display: flex;
+  }
 
   &__info {
     display: flex;
@@ -66,11 +74,10 @@ html {
     width: 48px;
     height: 48px;
   }
-
   &__nav {
     display: flex;
-    gap: 36px;
     align-items: center;
+     gap: 36px;
   }
 
   &__items {
@@ -617,3 +624,6 @@ html {
   }
 
 }
+
+@import 'tablet';
+@import 'mobile';
