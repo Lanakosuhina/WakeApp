@@ -43,6 +43,14 @@
     overflow: hidden;
   }
 
+  .menu>li>a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-size: 16px;
+  }
+
+
   .menu-button-container {
     display: none;
     height: 100%;
@@ -437,7 +445,7 @@
     }
 
     &__textarea {
-      width: 290px;
+      width: 303px;
       height: 90px;
 
       &::placeholder {
