@@ -304,6 +304,7 @@ html {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  cursor: pointer;
 }
 .form__checkbox + label::before {
   content: "";
@@ -1068,7 +1069,7 @@ html {
     width: 200px;
   }
   .button__join {
-    width: 200px;
+    width: 213px;
     height: 40px;
     font-size: 16px;
   }

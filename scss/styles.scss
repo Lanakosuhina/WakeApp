@@ -357,6 +357,7 @@ html {
       display: inline-flex;
       align-items: center;
       user-select: none;
+      cursor: pointer;
     }
 
     &+label::before {
@@ -679,7 +680,6 @@ html {
 
 
 }
-
 
 .footer {
   background-color: var(--black);
