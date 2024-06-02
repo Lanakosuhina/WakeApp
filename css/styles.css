@@ -79,6 +79,12 @@ html {
   font-family: "Proxima Nova Bold", sans-serif;
   font-size: 16px;
 }
+.header__items:hover {
+  text-decoration: underline;
+  text-underline-offset: 25px;
+  text-decoration-thickness: 4px;
+  text-underline-position: under;
+}
 .header__signup {
   display: flex;
   align-items: center;
@@ -98,6 +104,17 @@ html {
   background: var(--brand-gradient);
   color: var(--white);
   font-family: "Proxima Nova Bold", sans-serif;
+  background-size: 300% 100%;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(to right, var(--brand-pink), var(--brand-blue), var(--brand-blue), var(--brand-pink));
+}
+.header__button:hover {
+  background-position: 100% 0;
+  transition: all 0.4s ease-in-out;
+}
+.header__button:focus {
+  outline: none;
 }
 
 .main__hero {
@@ -165,6 +182,12 @@ html {
   box-shadow: 0 4px 16px 0 rgba(138, 97, 255, 0.6);
   font-family: "Proxima Nova Bold", sans-serif;
   font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.button__login:hover {
+  background-color: var(--white);
+  color: var(--black);
 }
 .button__play {
   border-radius: 8px;
@@ -176,6 +199,17 @@ html {
   color: var(--white);
   font-family: "Proxima Nova Bold", sans-serif;
   font-size: 18px;
+  background-size: 300% 100%;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(to right, var(--brand-pink), var(--brand-blue), var(--brand-blue), var(--brand-pink));
+}
+.button__play:hover {
+  background-position: 100% 0;
+  transition: all 0.4s ease-in-out;
+}
+.button__play:focus {
+  outline: none;
 }
 .button__join {
   border-radius: 8px;
@@ -187,6 +221,17 @@ html {
   color: var(--white);
   font-family: "Proxima Nova Bold", sans-serif;
   font-size: 18px;
+  background-size: 300% 100%;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(to right, var(--brand-pink), var(--brand-blue), var(--brand-blue), var(--brand-pink));
+}
+.button__join:hover {
+  background-position: 100% 0;
+  transition: all 0.4s ease-in-out;
+}
+.button__join:focus {
+  outline: none;
 }
 
 .form__top {
@@ -221,18 +266,21 @@ html {
   height: 44px;
   border-radius: 8px;
   border: none;
+  box-sizing: content-box;
+  color: gray;
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 16px;
+  padding-left: 13px;
 }
 .form__input::-moz-placeholder {
   color: gray;
   font-family: "Proxima Nova Regular", sans-serif;
   font-size: 16px;
-  padding: 13px;
 }
 .form__input::placeholder {
   color: gray;
   font-family: "Proxima Nova Regular", sans-serif;
   font-size: 16px;
-  padding: 13px;
 }
 .form__privacy {
   display: flex;
@@ -256,6 +304,7 @@ html {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  cursor: pointer;
 }
 .form__checkbox + label::before {
   content: "";
@@ -410,11 +459,16 @@ html {
 .game__big-button {
   border-radius: 12px;
   border: none;
-  background: rgb(72, 112, 255);
+  background: var(--brand-blue);
   color: var(--white);
   font-family: "Proxima Nova Regular", sans-serif;
   font-size: 10px;
   padding: 5px 13px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.game__big-button:hover {
+  background-color: var(--brand-pink);
 }
 .game__wrapper {
   display: flex;
@@ -472,6 +526,17 @@ html {
   color: var(--white);
   font-family: "Proxima Nova Bold", sans-serif;
   font-size: 18px;
+  background-size: 300% 100%;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(to right, var(--brand-pink), var(--brand-blue), var(--brand-blue), var(--brand-pink));
+}
+.bottom__button:hover {
+  background-position: 100% 0;
+  transition: all 0.4s ease-in-out;
+}
+.bottom__button:focus {
+  outline: none;
 }
 
 .input__name, .input__email {
@@ -479,36 +544,42 @@ html {
   height: 44px;
   border-radius: 8px;
   border: none;
+  box-sizing: content-box;
+  color: gray;
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 16px;
+  padding-left: 13px;
 }
 .input__name::-moz-placeholder, .input__email::-moz-placeholder {
   color: gray;
   font-family: "Proxima Nova Regular", sans-serif;
   font-size: 16px;
-  padding: 13px;
 }
 .input__name::placeholder, .input__email::placeholder {
   color: gray;
   font-family: "Proxima Nova Regular", sans-serif;
   font-size: 16px;
-  padding: 13px;
 }
 .input__textarea {
-  width: 400px;
+  width: 413px;
   height: 128px;
   border-radius: 8px;
   border: none;
+  box-sizing: border-box;
+  color: gray;
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 16px;
+  padding: 13px;
 }
 .input__textarea::-moz-placeholder {
   color: gray;
   font-family: "Proxima Nova Regular", sans-serif;
   font-size: 16px;
-  padding: 13px;
 }
 .input__textarea::placeholder {
   color: gray;
   font-family: "Proxima Nova Regular", sans-serif;
   font-size: 16px;
-  padding: 13px;
 }
 
 .footer {
@@ -862,6 +933,12 @@ html {
     margin: 0 1rem;
     overflow: hidden;
   }
+  .menu > li > a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: "Proxima Nova Bold", sans-serif;
+    font-size: 16px;
+  }
   .menu-button-container {
     display: none;
     height: 100%;
@@ -992,7 +1069,7 @@ html {
     width: 200px;
   }
   .button__join {
-    width: 200px;
+    width: 213px;
     height: 40px;
     font-size: 16px;
   }
@@ -1160,7 +1237,7 @@ html {
     font-size: 12px;
   }
   .input__textarea {
-    width: 290px;
+    width: 303px;
     height: 90px;
   }
   .input__textarea::-moz-placeholder {
