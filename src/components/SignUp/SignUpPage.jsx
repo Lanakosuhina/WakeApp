@@ -38,7 +38,7 @@ export default function SignUpPage() {
                   className="modal__btn-signup-ent _hover01"
                   id="SignUpEnter"
                 >
-                  <a href="../main.html">Join us</a>{" "}
+                  <a href="/">Join us</a>{" "}
                 </button>
               </form>
             </div>
