@@ -1,0 +1,11 @@
+<svg width="10.000000" height="16.000000" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<clipPath id="clip12_223">
+			<rect id="fa-brands:facebook-f" width="10.000000" height="16.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="fa-brands:facebook-f" width="10.000000" height="16.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip12_223)">
+		<path id="Vector" d="M8.72 9L9.16 6.1L6.38 6.1L6.38 4.22C6.38 3.43 6.77 2.66 8.02 2.66L9.28 2.66L9.28 0.19C9.28 0.19 8.13 0 7.04 0C4.75 0 3.25 1.38 3.25 3.89L3.25 6.1L0.71 6.1L0.71 9L3.25 9L3.25 16L6.38 16L6.38 9L8.72 9Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>
