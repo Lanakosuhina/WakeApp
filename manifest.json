@@ -1,0 +1,23 @@
+{
+  "lang": "ru",
+  "name": "WakeApp",
+  "description": "Your perfect place to get some fun and excitement",
+  "icons": [
+    {
+      "src": "/src/assets/logo.svg",
+      "sizes": "64x64",
+      "type": "logo/svg"
+    }
+  ],
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#01011F",
+  "screenshots": [
+    {
+      "src": "/screenshot.png",
+      "sizes": "1857x875",
+      "type": "image/png"
+    }
+  ]
+}
